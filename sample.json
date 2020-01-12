@@ -1,17 +1,17 @@
 [{
     "model": "ar.Recipe",
-    "pk": 9999999,
+    "pk": 89123,
     "fields": {
-        "name":"Test",
-        "source":"www.google.com",
+        "name":"Garden Salad",
+        "source":"http://www.kraftcanada.com/recipes/italian-garden-salad-92114",
         "instructions": "1, 2, 3, 4, 5, 6"
     }
 },
 {
     "model": "ar.Ingredients",
-    "pk": 9999999,
+    "pk": 8001,
     "fields": {
-        "name":"Test",
+        "name":"Spinach",
         "recipe":9999999,
         "quantity": 1.0,
         "unit": "g"

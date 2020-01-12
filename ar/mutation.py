@@ -18,7 +18,6 @@ class AzureAI(graphene.Mutation):
 
     def mutate(self, info, **data):
         image_data = base64.b64decode(data['input'])
-        print(bytearray(image_data))
         analyze_url = AZURE_API + "vision/v2.1/analyze"
         headers = {'Ocp-Apim-Subscription-Key': os.environ.get('NWHACKS_SECRET_KEY'),'Content-Type': 'application/octet-stream'}
         params = {'visualFeatures': 'Tags,Description'}
@@ -26,21 +25,23 @@ class AzureAI(graphene.Mutation):
         response.raise_for_status()
 
         analysis = response.json()
-        print(analysis)
 
         tags = analysis['tags']
-        name = 'Not an ingredient|'
+        name = 'Not an ingredient'
+        temp_name = ''
         confidence = 0.75
         max_confidence = 0
         for tag in tags:
             ingredients = Ingredients.objects.filter(name__icontains=tag['name'])
             temp = round(tag['confidence'], 2)
             if ingredients and temp > max_confidence:
-                name = ''
+                temp_name = ''
                 for ingredient in ingredients:
-                    name += ingredient.name + '|'
+                    temp_name += ingredient.name + '.'
                 max_confidence = temp
-        name = name[:-1]
+
+        if temp_name:
+            name = temp_name[:-1]
         if max_confidence != 0:
             confidence = round(max_confidence, 2)
         caption = analysis['description']['captions'][0]['text']

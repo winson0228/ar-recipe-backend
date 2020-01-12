@@ -15,7 +15,7 @@ class Query(ObjectType):
 
     def resolve_recipes(self, info, names=None):
         if names:
-            names = [word for name in names for word in name.split('|')]
+            names = [word for name in names for word in name.split('.')]
             return Recipe.objects.filter(ingredients__name__in=names)
         return []
 
