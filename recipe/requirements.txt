@@ -1,0 +1,6 @@
+django==3.0.2
+django-filter==0.12.0
+graphene-django==2.8
+djangorestframework==3.11.0
+pipenv==2018.11.26
+requests==2.22.0
