@@ -1,68 +1,61 @@
-[{
+[
+{
     "model": "ar.Recipe",
-    "pk": 8001,
+    "pk": 8002,
     "fields": {
-        "name":"Italian Garden Salad",
-        "source":"http://www.kraftcanada.com/recipes/italian-garden-salad-92114",
-        "instructions": "Toss greens with vegetables and olives in large bowl., Add dressing just before serving; mix lightly."
+        "name":"Tomato Sandwich",
+        "source":"https://www.allrecipes.com/recipe/16714/quick-tomato-sandwich/",
+        "instructions": "In a small bowl, combine ketchup, mayonnaise, salt, and hot pepper sauce. Mix well. Meanwhile, toast bread in toaster. Spread mixture on all 4 slices of toast; set aside., Arrange lettuce leaves on the bread followed by 3 or 4 slices of tomato. Top with another piece of bread. Repeat with the other sandwich."
     }
 },
 {
     "model": "ar.Ingredients",
-    "pk": 8007,
+    "pk": 8013,
     "fields": {
-        "name":"spinach",
-        "recipe":8001,
-        "quantity": 283,
+        "name":"Mayonnaise",
+        "recipe":8002,
+        "quantity": 1,
+        "unit": "tablespoon"
+    }
+},
+{
+    "model": "ar.Ingredients",
+    "pk": 8014,
+    "fields": {
+        "name":"Hot sauce",
+        "recipe":8002,
+        "quantity": 0.25,
+        "unit": "teaspoon"
+    }
+},
+{
+    "model": "ar.Ingredients",
+    "pk": 8015,
+    "fields": {
+        "name":"Sliced bread",
+        "recipe":8002,
+        "quantity": 2,
+        "unit": "slices"
+    }
+},
+{
+    "model": "ar.Ingredients",
+    "pk": 8016,
+    "fields": {
+        "name":"Lettuce",
+        "recipe":8002,
+        "quantity": 50,
         "unit": "g"
     }
 },
 {
     "model": "ar.Ingredients",
-    "pk": 8008,
+    "pk": 8017,
     "fields": {
-        "name":"Pepper (red)",
-        "recipe":8001,
-        "quantity": 1
-    }
-},
-{
-    "model": "ar.Ingredients",
-    "pk": 8009,
-    "fields": {
-        "name":"Zucchini",
-        "recipe":8001,
-        "quantity": 1
-    }
-},
-{
-    "model": "ar.Ingredients",
-    "pk": 8010,
-    "fields": {
-        "name":"Onion",
-        "recipe":8001,
-        "quantity": 0.5,
-        "unit": "cup"
-    }
-},
-{
-    "model": "ar.Ingredients",
-    "pk": 8011,
-    "fields": {
-        "name":"Sliced Olives",
-        "recipe":8001,
-        "quantity": 0.5,
-        "unit": "cup"
-    }
-},
-{
-    "model": "ar.Ingredients",
-    "pk": 8012,
-    "fields": {
-        "name":"Vinaigrette Dressing",
-        "recipe":8001,
-        "quantity": 0.5,
-        "unit": "cup"
+        "name":"Tomato, sliced",
+        "recipe":8002,
+        "quantity": 50,
+        "unit": "g"
     }
 }
 ]
