@@ -1,19 +1,79 @@
 [{
     "model": "ar.Recipe",
-    "pk": 89123,
+    "pk": 8000,
     "fields": {
-        "name":"Garden Salad",
-        "source":"http://www.kraftcanada.com/recipes/italian-garden-salad-92114",
-        "instructions": "1, 2, 3, 4, 5, 6"
+        "name":"Spaghetti with Meat Sauce",
+        "source":"https://www.allrecipes.com/recipe/158140/spaghetti-sauce-with-ground-beef/",
+        "instructions": "Combine ground beef, onion, garlic, and green pepper in a large saucepan. Cook and stir until meat is brown and vegetables are tender. Drain grease., Stir diced tomatoes, tomato sauce, and tomato paste into the pan. Season with oregano, basil, salt, and pepper. Simmer spaghetti sauce for 1 hour, stirring occasionally."
+    }
+},
+{
+    "model": "ar.Ingredients",
+    "pk": 8000,
+    "fields": {
+        "name":"Diced Tomato",
+        "recipe":8000,
+        "quantity": 28,
+        "unit": "oz"
     }
 },
 {
     "model": "ar.Ingredients",
     "pk": 8001,
     "fields": {
-        "name":"Spinach",
-        "recipe":9999999,
-        "quantity": 1.0,
-        "unit": "g"
+        "name":"Chopped onion",
+        "recipe":8000,
+        "quantity": 1
     }
-}]
+},
+{
+    "model": "ar.Ingredients",
+    "pk": 8002,
+    "fields": {
+        "name":"Ground beef",
+        "recipe":8000,
+        "quantity": 1,
+        "unit": "lb"
+    }
+},
+{
+    "model": "ar.Ingredients",
+    "pk": 8003,
+    "fields": {
+        "name":"Garlic",
+        "recipe":8000,
+        "quantity": 4,
+        "unit": "cloves"
+    }
+},
+{
+    "model": "ar.Ingredients",
+    "pk": 8004,
+    "fields": {
+        "name":"Dried basil",
+        "recipe":8000,
+        "quantity": 2,
+        "unit": "teaspoons"
+    }
+},
+{
+    "model": "ar.Ingredients",
+    "pk": 8005,
+    "fields": {
+        "name":"salt",
+        "recipe":8000,
+        "quantity": 1,
+        "unit": "teaspoon"
+    }
+},
+{
+    "model": "ar.Ingredients",
+    "pk": 8006,
+    "fields": {
+        "name":"black pepper",
+        "recipe":8000,
+        "quantity": 0.5,
+        "unit": "teaspoon"
+    }
+}
+]
