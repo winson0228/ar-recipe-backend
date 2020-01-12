@@ -1,79 +1,68 @@
 [{
     "model": "ar.Recipe",
-    "pk": 8000,
-    "fields": {
-        "name":"Spaghetti with Meat Sauce",
-        "source":"https://www.allrecipes.com/recipe/158140/spaghetti-sauce-with-ground-beef/",
-        "instructions": "Combine ground beef, onion, garlic, and green pepper in a large saucepan. Cook and stir until meat is brown and vegetables are tender. Drain grease., Stir diced tomatoes, tomato sauce, and tomato paste into the pan. Season with oregano, basil, salt, and pepper. Simmer spaghetti sauce for 1 hour, stirring occasionally."
-    }
-},
-{
-    "model": "ar.Ingredients",
-    "pk": 8000,
-    "fields": {
-        "name":"Diced Tomato",
-        "recipe":8000,
-        "quantity": 28,
-        "unit": "oz"
-    }
-},
-{
-    "model": "ar.Ingredients",
     "pk": 8001,
     "fields": {
-        "name":"Chopped onion",
-        "recipe":8000,
+        "name":"Italian Garden Salad",
+        "source":"http://www.kraftcanada.com/recipes/italian-garden-salad-92114",
+        "instructions": "Toss greens with vegetables and olives in large bowl., Add dressing just before serving; mix lightly."
+    }
+},
+{
+    "model": "ar.Ingredients",
+    "pk": 8007,
+    "fields": {
+        "name":"spinach",
+        "recipe":8001,
+        "quantity": 283,
+        "unit": "g"
+    }
+},
+{
+    "model": "ar.Ingredients",
+    "pk": 8008,
+    "fields": {
+        "name":"Pepper (red)",
+        "recipe":8001,
         "quantity": 1
     }
 },
 {
     "model": "ar.Ingredients",
-    "pk": 8002,
+    "pk": 8009,
     "fields": {
-        "name":"Ground beef",
-        "recipe":8000,
-        "quantity": 1,
-        "unit": "lb"
+        "name":"Zucchini",
+        "recipe":8001,
+        "quantity": 1
     }
 },
 {
     "model": "ar.Ingredients",
-    "pk": 8003,
+    "pk": 8010,
     "fields": {
-        "name":"Garlic",
-        "recipe":8000,
-        "quantity": 4,
-        "unit": "cloves"
-    }
-},
-{
-    "model": "ar.Ingredients",
-    "pk": 8004,
-    "fields": {
-        "name":"Dried basil",
-        "recipe":8000,
-        "quantity": 2,
-        "unit": "teaspoons"
-    }
-},
-{
-    "model": "ar.Ingredients",
-    "pk": 8005,
-    "fields": {
-        "name":"salt",
-        "recipe":8000,
-        "quantity": 1,
-        "unit": "teaspoon"
-    }
-},
-{
-    "model": "ar.Ingredients",
-    "pk": 8006,
-    "fields": {
-        "name":"black pepper",
-        "recipe":8000,
+        "name":"Onion",
+        "recipe":8001,
         "quantity": 0.5,
-        "unit": "teaspoon"
+        "unit": "cup"
+    }
+},
+{
+    "model": "ar.Ingredients",
+    "pk": 8011,
+    "fields": {
+        "name":"Sliced Olives",
+        "recipe":8001,
+        "quantity": 0.5,
+        "unit": "cup"
+    }
+},
+{
+    "model": "ar.Ingredients",
+    "pk": 8012,
+    "fields": {
+        "name":"Vinaigrette Dressing",
+        "recipe":8001,
+        "quantity": 0.5,
+        "unit": "cup"
     }
 }
 ]
