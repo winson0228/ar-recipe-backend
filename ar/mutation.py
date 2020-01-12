@@ -30,7 +30,7 @@ class AzureAI(graphene.Mutation):
 
         tags = analysis['tags']
         name = 'Not an ingredient'
-        confidence = 0
+        confidence = 0.75
         for tag in tags:
             ingredient = Ingredients.objects.filter(name__icontains=tag['name']).first()
             if ingredient is not None:
