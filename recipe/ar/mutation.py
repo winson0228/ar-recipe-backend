@@ -26,6 +26,7 @@ class AzureAI(graphene.Mutation):
         response.raise_for_status()
 
         analysis = response.json()
+        print(analysis)
 
         tags = analysis['tags']
         name = ''
