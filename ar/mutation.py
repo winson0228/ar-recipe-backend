@@ -32,8 +32,9 @@ class AzureAI(graphene.Mutation):
         name = ''
         confidence = 0
         for tag in tags:
-            if Ingredients.objects.filter(name__icontains(tag['name'])).exists():
-                name = Ingredients.objects.filter(name__icontains(tag['name'])).first()
+            ingredient = Ingredients.objects.filter(name__icontains=tag['name']).first()
+            if ingredient is not None:
+                name = ingredient.name
                 confidence = tag['confidence']
                 break
         caption = analysis['description']['captions'][0]['text']
