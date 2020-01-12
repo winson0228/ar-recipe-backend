@@ -29,14 +29,20 @@ class AzureAI(graphene.Mutation):
         print(analysis)
 
         tags = analysis['tags']
-        name = 'Not an ingredient'
+        name = 'Not an ingredient|'
         confidence = 0.75
+        max_confidence = 0
         for tag in tags:
-            ingredient = Ingredients.objects.filter(name__icontains=tag['name']).first()
-            if ingredient is not None:
-                name = ingredient.name
-                confidence = round(tag['confidence'], 2)
-                break
+            ingredients = Ingredients.objects.filter(name__icontains=tag['name'])
+            temp = round(tag['confidence'], 2)
+            if ingredients is not None and temp > max_confidence:
+                name = ''
+                for ingredient in ingredients:
+                    name += ingredient.name + '|'
+                max_confidence = temp
+        name = name[:-1]
+        if max_confidence != 0:
+            confidence = round(max_confidence, 2)
         caption = analysis['description']['captions'][0]['text']
 
         new_obj = f'name={name},confidence={str(confidence)},caption={caption}'
