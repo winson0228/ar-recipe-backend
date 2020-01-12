@@ -1,10 +1,154 @@
-[
+[{
+    "model": "ar.Recipe",
+    "pk": 8000,
+    "fields": {
+        "name":"Spaghetti with Meat Sauce",
+        "source":"https://images.media-allrecipes.com/userphotos/720x405/6558058.jpg",
+        "instructions": "Combine ground beef, onion, garlic, and green pepper in a large saucepan. Cook and stir until meat is brown and vegetables are tender. Drain grease., Stir diced tomatoes, tomato sauce, and tomato paste into the pan. Season with oregano, basil, salt, and pepper. Simmer spaghetti sauce for 1 hour, stirring occasionally."
+    }
+},
+{
+    "model": "ar.Ingredients",
+    "pk": 8000,
+    "fields": {
+        "name":"Diced Tomato",
+        "recipe":8000,
+        "quantity": 28,
+        "unit": "oz"
+    }
+},
+{
+    "model": "ar.Ingredients",
+    "pk": 8001,
+    "fields": {
+        "name":"Chopped onion",
+        "recipe":8000,
+        "quantity": 1
+    }
+},
+{
+    "model": "ar.Ingredients",
+    "pk": 8002,
+    "fields": {
+        "name":"Ground beef",
+        "recipe":8000,
+        "quantity": 1,
+        "unit": "lb"
+    }
+},
+{
+    "model": "ar.Ingredients",
+    "pk": 8003,
+    "fields": {
+        "name":"Garlic",
+        "recipe":8000,
+        "quantity": 4,
+        "unit": "cloves"
+    }
+},
+{
+    "model": "ar.Ingredients",
+    "pk": 8004,
+    "fields": {
+        "name":"Dried basil",
+        "recipe":8000,
+        "quantity": 2,
+        "unit": "teaspoons"
+    }
+},
+{
+    "model": "ar.Ingredients",
+    "pk": 8005,
+    "fields": {
+        "name":"salt",
+        "recipe":8000,
+        "quantity": 1,
+        "unit": "teaspoon"
+    }
+},
+{
+    "model": "ar.Ingredients",
+    "pk": 8006,
+    "fields": {
+        "name":"black pepper",
+        "recipe":8000,
+        "quantity": 0.5,
+        "unit": "teaspoon"
+    }
+},
+{
+    "model": "ar.Recipe",
+    "pk": 8001,
+    "fields": {
+        "name":"Italian Garden Salad",
+        "source":"http://assets.kraftfoods.com/recipe_images/opendeploy/506894_2_1_retail-e51b3786ad1b416f498ff756970ca5b781355f4f_642x428.jpg",
+        "instructions": "Toss greens with vegetables and olives in large bowl., Add dressing just before serving; mix lightly."
+    }
+},
+{
+    "model": "ar.Ingredients",
+    "pk": 8007,
+    "fields": {
+        "name":"spinach",
+        "recipe":8001,
+        "quantity": 283,
+        "unit": "g"
+    }
+},
+{
+    "model": "ar.Ingredients",
+    "pk": 8008,
+    "fields": {
+        "name":"Pepper (red)",
+        "recipe":8001,
+        "quantity": 1
+    }
+},
+{
+    "model": "ar.Ingredients",
+    "pk": 8009,
+    "fields": {
+        "name":"Zucchini",
+        "recipe":8001,
+        "quantity": 1
+    }
+},
+{
+    "model": "ar.Ingredients",
+    "pk": 8010,
+    "fields": {
+        "name":"Onion",
+        "recipe":8001,
+        "quantity": 0.5,
+        "unit": "cup"
+    }
+},
+{
+    "model": "ar.Ingredients",
+    "pk": 8011,
+    "fields": {
+        "name":"Sliced Olives",
+        "recipe":8001,
+        "quantity": 0.5,
+        "unit": "cup"
+    }
+},
+{
+    "model": "ar.Ingredients",
+    "pk": 8012,
+    "fields": {
+        "name":"Vinaigrette Dressing",
+        "recipe":8001,
+        "quantity": 0.5,
+        "unit": "cup"
+    }
+},
 {
     "model": "ar.Recipe",
     "pk": 8002,
     "fields": {
         "name":"Tomato Sandwich",
-        "source":"https://www.allrecipes.com/recipe/16714/quick-tomato-sandwich/",
+        "source":"https://media.foodnetwork.ca/recipetracker/d7b7a33b-2748-48ad-91d0-13ee6de8d056_fried-red-tomato-sandwich_webready.jpg",
         "instructions": "In a small bowl, combine ketchup, mayonnaise, salt, and hot pepper sauce. Mix well. Meanwhile, toast bread in toaster. Spread mixture on all 4 slices of toast; set aside., Arrange lettuce leaves on the bread followed by 3 or 4 slices of tomato. Top with another piece of bread. Repeat with the other sandwich."
     }
 },
