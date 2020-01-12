@@ -11,7 +11,7 @@
     "model": "ar.Ingredients",
     "pk": 8000,
     "fields": {
-        "name":"Diced Tomato",
+        "name":"diced Tomato",
         "recipe":8000,
         "quantity": 28,
         "unit": "oz"
@@ -21,7 +21,7 @@
     "model": "ar.Ingredients",
     "pk": 8001,
     "fields": {
-        "name":"Chopped onion",
+        "name":"chopped onion",
         "recipe":8000,
         "quantity": 1
     }
@@ -30,7 +30,7 @@
     "model": "ar.Ingredients",
     "pk": 8002,
     "fields": {
-        "name":"Ground beef",
+        "name":"ground beef",
         "recipe":8000,
         "quantity": 1,
         "unit": "lb"
@@ -40,7 +40,7 @@
     "model": "ar.Ingredients",
     "pk": 8003,
     "fields": {
-        "name":"Garlic",
+        "name":"garlic",
         "recipe":8000,
         "quantity": 4,
         "unit": "cloves"
@@ -50,7 +50,7 @@
     "model": "ar.Ingredients",
     "pk": 8004,
     "fields": {
-        "name":"Dried basil",
+        "name":"dried basil",
         "recipe":8000,
         "quantity": 2,
         "unit": "teaspoons"
@@ -99,7 +99,7 @@
     "model": "ar.Ingredients",
     "pk": 8008,
     "fields": {
-        "name":"Pepper (red)",
+        "name":"pepper (red)",
         "recipe":8001,
         "quantity": 1
     }
@@ -108,7 +108,7 @@
     "model": "ar.Ingredients",
     "pk": 8009,
     "fields": {
-        "name":"Zucchini",
+        "name":"zucchini",
         "recipe":8001,
         "quantity": 1
     }
@@ -117,7 +117,7 @@
     "model": "ar.Ingredients",
     "pk": 8010,
     "fields": {
-        "name":"Onion",
+        "name":"onion",
         "recipe":8001,
         "quantity": 0.5,
         "unit": "cup"
@@ -127,7 +127,7 @@
     "model": "ar.Ingredients",
     "pk": 8011,
     "fields": {
-        "name":"Sliced Olives",
+        "name":"sliced Olives",
         "recipe":8001,
         "quantity": 0.5,
         "unit": "cup"
@@ -156,7 +156,7 @@
     "model": "ar.Ingredients",
     "pk": 8013,
     "fields": {
-        "name":"Mayonnaise",
+        "name":"mayonnaise",
         "recipe":8002,
         "quantity": 1,
         "unit": "tablespoon"
@@ -166,7 +166,7 @@
     "model": "ar.Ingredients",
     "pk": 8014,
     "fields": {
-        "name":"Hot sauce",
+        "name":"hot sauce",
         "recipe":8002,
         "quantity": 0.25,
         "unit": "teaspoon"
@@ -176,7 +176,7 @@
     "model": "ar.Ingredients",
     "pk": 8015,
     "fields": {
-        "name":"Sliced bread",
+        "name":"sliced bread",
         "recipe":8002,
         "quantity": 2,
         "unit": "slices"
@@ -186,7 +186,7 @@
     "model": "ar.Ingredients",
     "pk": 8016,
     "fields": {
-        "name":"Lettuce",
+        "name":"lettuce",
         "recipe":8002,
         "quantity": 50,
         "unit": "g"
@@ -196,7 +196,7 @@
     "model": "ar.Ingredients",
     "pk": 8017,
     "fields": {
-        "name":"Tomato, sliced",
+        "name":"tomato, sliced",
         "recipe":8002,
         "quantity": 50,
         "unit": "g"
