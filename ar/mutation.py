@@ -35,7 +35,7 @@ class AzureAI(graphene.Mutation):
         for tag in tags:
             ingredients = Ingredients.objects.filter(name__icontains=tag['name'])
             temp = round(tag['confidence'], 2)
-            if ingredients is not None and temp > max_confidence:
+            if ingredients and temp > max_confidence:
                 name = ''
                 for ingredient in ingredients:
                     name += ingredient.name + '|'
