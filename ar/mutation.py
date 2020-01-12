@@ -6,9 +6,9 @@ import json
 from .inputs import *
 from .node import *
 import base64
+from .models import *
 
 AZURE_API = "https://imagerecognitionnwhacks.cognitiveservices.azure.com/"
-LIST_OF_INGREDIENTS = ["apple", "orange", "banana"]
 
 class AzureAI(graphene.Mutation):
     class Arguments:
@@ -32,15 +32,11 @@ class AzureAI(graphene.Mutation):
         name = ''
         confidence = 0
         for tag in tags:
-            if tag['name'] in LIST_OF_INGREDIENTS:
-                name = tag['name']
+            if Ingredients.objects.filter(name__icontains(tag['name'])).exists():
+                name = Ingredients.objects.filter(name__icontains(tag['name'])).first()
                 confidence = tag['confidence']
-                break;
+                break
         caption = analysis['description']['captions'][0]['text']
 
-        new_obj = {
-            "name": name,
-            "confidence": confidence,
-            "caption": caption
-        }
+        new_obj = f'name={name},confidence={str(confidence)},caption={caption}'
         return AzureAI(name=new_obj)

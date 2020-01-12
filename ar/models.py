@@ -7,7 +7,7 @@ class Recipe(models.Model):
     instructions = models.TextField()
 
 class Ingredients(models.Model):
-    name = models.CharField(max_length=2048)
+    name = models.CharField(max_length=2048, null=True)
     recipe = models.ForeignKey(Recipe, related_name="ingredients", on_delete=models.CASCADE)
-    quantity = models.FloatField()
-    unit = models.CharField(max_length=2048)
+    quantity = models.FloatField(null=True)
+    unit = models.CharField(max_length=2048, null=True)
